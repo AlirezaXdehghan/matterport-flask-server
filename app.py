@@ -47,12 +47,6 @@ def separate_page_id(path):
     else:
         return path.replace(page_id,'', 1)
 
-
-@app.route("/")
-def home():
-    return "bruh"
-
-
 @app.route("/<path:path>", methods=["GET"])
 def serve_file(path):
     global page_id
@@ -64,6 +58,7 @@ def serve_file(path):
     elif page_id == '':
         abort(404)
     path = separate_page_id(path)
+    path = path.replace('~', '_')
     print('path',path)
     BASE_DIR = os.path.join(BASE_DIR_ORG,page_id)
     if not path or path == '' or path == '/':
@@ -94,8 +89,6 @@ def handle_graph_post():
     except Exception as e:
         logging.error(f"Error handling POST request: {e}")
         abort(500)
-
-
 
 @app.route('/')
 def home():  # put application's code here
