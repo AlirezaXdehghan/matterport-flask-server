@@ -29,7 +29,7 @@ A Flask server inspired by the [matterport-dl](https://github.com/rebane2001/mat
 ---
 
 ### Step 2: Configure `index.html`
-1. Open `index.html` in the project directory.
+1. Open `index.html` in the templates directory.
 2. Add the IDs of your models to the `<a>` tags for each card instead of '11wordsid11'.
 3. (optional) Add an image for the card
 Here's an example:
