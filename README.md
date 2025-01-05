@@ -1,4 +1,4 @@
-# Matterport model server
+# Matterport Flask Server
 
 A Flask server inspired by the [matterport-dl](https://github.com/rebane2001/matterport-dl) project, designed to host downloaded matterport models online!
 
