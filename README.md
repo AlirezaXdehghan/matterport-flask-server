@@ -80,13 +80,14 @@ python app.py
      BASE_DIR_ORG = 'https://bucket-name.s3.amazonaws.com/downloads/'
      ```
 3. Rename `app-s3.py` to `app.py`, and delete the original `app.py`.
-4. Push the project to Heroku:
+4. Create a container in Heroku
+5. Push the project to your container:
    ```bash
    git add .
    git commit -m "Deploying to Heroku"
    git push heroku main
    ```
-5. Your app is now live on Heroku!
+6. Your app is now live on Heroku!
 
 ---
 
@@ -98,8 +99,8 @@ python app.py
 
 ## Acknowledgments
 - This project is simply a derivative of what the masterminds behind [matterport-dl](https://github.com/rebane2001/matterport-dl) project have done, Thanks.
-- Thanks to (Venice Project Center)[https://veniceprojectcenter.org] who were looking to safekeep their models and kick started the idea.
-- Thanks to (Matterport)[https://matterport.com] for their awesome technology and horrible subscription model
+- Thanks to [Venice Project Center](https://veniceprojectcenter.org) who were looking to safekeep their models and kick started the idea.
+- Thanks to [Matterport](https://matterport.com) for their awesome technology and horrible subscription model
 
 ---
 
